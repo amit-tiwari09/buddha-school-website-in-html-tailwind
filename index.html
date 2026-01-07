@@ -230,91 +230,8 @@
                 <button class="lg:hidden p-2 transition-colors toggle-sidebar">
                     <img src="/assets/svg/breadcrumb.svg" class="w-6 h-6 pointer-events-none" alt="">
                 </button>
-
             </div>
 
-            <div class="overflow-hidden transition-all duration-300 max-h-0 fixed top">
-                <nav class="flex flex-col border-t border-border pt-4">
-                    <div>
-                        <button
-                            class="flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-black transition-colors">
-                            Home
-                        </button>
-                    </div>
-                    <div>
-                        <button
-                            class="flex items-center justify-between w-full px-4 py-3 text-sm font-medium /80 hover: transition-colors">
-                            About Us
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-chevron-down w-4 h-4 transition-transform duration-300">
-                                <path d="m6 9 6 6 6-6"></path>
-                            </svg>
-                        </button>
-                        <div class="overflow-hidden transition-all duration-300 bg-muted/50 max-h-0">
-                            <a href="/about/history" class="block px-8 py-2.5 text-sm /70 hover: transition-colors">Our
-                                History</a>
-                            <a href="/about/mission"
-                                class="block px-8 py-2.5 text-sm /70 hover: transition-colors">Mission
-                                &amp; Vision</a>
-                            <a href="/about/principal"
-                                class="block px-8 py-2.5 text-sm /70 hover: transition-colors">Principal's
-                                Message</a>
-                            <a href="/about/faculty"
-                                class="block px-8 py-2.5 text-sm /70 hover: transition-colors">Faculty</a>
-                        </div>
-                    </div>
-                    <div>
-                        <button
-                            class="flex items-center justify-between w-full px-4 py-3 text-sm font-medium /80 hover: transition-colors">Academics<svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-chevron-down w-4 h-4 transition-transform duration-300">
-                                <path d="m6 9 6 6 6-6"></path>
-                            </svg></button>
-                        <div class="overflow-hidden transition-all duration-300 bg-muted/50 max-h-0"><a
-                                href="/academics/curriculum"
-                                class="block px-8 py-2.5 text-sm /70 hover: transition-colors">Curriculum</a><a
-                                href="/academics/buddhist-studies"
-                                class="block px-8 py-2.5 text-sm /70 hover: transition-colors">Buddhist
-                                Studies</a><a href="/academics/meditation"
-                                class="block px-8 py-2.5 text-sm /70 hover: transition-colors">Meditation
-                                Programs</a><a href="/academics/languages"
-                                class="block px-8 py-2.5 text-sm /70 hover: transition-colors">Language
-                                Studies</a></div>
-                    </div>
-                    <div><button
-                            class="flex items-center justify-between w-full px-4 py-3 text-sm font-medium /80 hover: transition-colors">Admissions<svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-chevron-down w-4 h-4 transition-transform duration-300">
-                                <path d="m6 9 6 6 6-6"></path>
-                            </svg></button>
-                        <div class="overflow-hidden transition-all duration-300 bg-muted/50 max-h-0"><a
-                                href="/admissions/apply"
-                                class="block px-8 py-2.5 text-sm /70 hover: transition-colors">How
-                                to Apply</a><a href="/admissions/scholarships"
-                                class="block px-8 py-2.5 text-sm /70 hover: transition-colors">Scholarships</a><a
-                                href="/admissions/fees"
-                                class="block px-8 py-2.5 text-sm /70 hover: transition-colors">Fee
-                                Structure</a></div>
-                    </div>
-                    <div><button
-                            class="flex items-center justify-between w-full px-4 py-3 text-sm font-medium /80 hover: transition-colors">Gallery</button>
-                    </div>
-                    <div><button
-                            class="flex items-center justify-between w-full px-4 py-3 text-sm font-medium /80 hover: transition-colors">News
-                            &amp; Events</button></div>
-                    <div><button
-                            class="flex items-center justify-between w-full px-4 py-3 text-sm font-medium /80 hover: transition-colors">Contact</button>
-                    </div><a href="/admissions/apply"
-                        class="mx-4 mt-4 px-6 py-2.5   rounded-full text-sm font-semibold text-center transition-all duration-300">Apply
-                        Now</a>
-                </nav>
-            </div>
         </div>
     </header>
 
@@ -473,26 +390,119 @@
     </section>
 
     <!--============================ Notice Board & About us Section ===================================-->
-    <!-- <section id="notice-board-section" class="w-full bg-white/90 py-5 pt-12 overflow-visible bg-red-500"> -->
-    <section id="notice-board-section" class="w-full py-5 pt-12 overflow-visible bg-red-500">
+    <section id="notice-board-section" class="w-full bg-white/90 pt-12 overflow-visible">
         <div class="grid grid-cols-4 h-full">
-            <div class="col-span-4 lg:col-span-3 flex flex-col md:flex-row gap-2 px-1.5 xl:pl-5 xl:pr-5">
+
+            <!--======= About us ========-->
+            <div
+                class="col-span-4 lg:col-span-3 flex flex-col md:flex-row gap-2 px-1.5 xl:pl-5 xl:pr-5 items-center justify-center">
+
                 <!--======= Image section  ========-->
                 <div class="flex-1 flex items-start justify-center p-2 relative group">
+                    <div class="w-full h-full relative">
+                        <div
+                            class="relative z-10 overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-300 group-hover:scale-105">
+                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&h=700&fit=crop"
+                                alt="School Building" class="w-full h-auto object-cover">
 
+                            <div
+                                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <div class="text-white">
+                                    <h3 class="text-2xl font-bold mb-1">Buddha School</h3>
+                                    <p class="text-sm text-gray-200">Lorem ipsum dolor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!--======= About us section  ========-->
-                <div class="flex-1 p-2 pt-12">
+                <div class="flex-1 p-5 pt-12 ">
+                    <div class="space-y-6">
 
+                        <!--==== Section Header ====-->
+                        <div class="space-y-2">
+                            <div
+                                class="inline-block px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-semibold mb-2">
+                                About Our Institution
+                            </div>
+                            <h2 class="text-4xl font-bold text-gray-800 leading-tight">
+                                Empowering Future Leaders Through Quality Education
+                            </h2>
+                        </div>
+
+                        <!--==== About Content ====-->
+                        <div class="space-y-4">
+                            <p class="text-gray-600 leading-relaxed">
+                                Founded in 2064 B.S. at Kanchan Rural Municipality-3, Haraiya, our institution stands as
+                                a beacon of academic excellence and community development. Affiliated to Tribhuvan
+                                University, Nepal, we pride ourselves on being one of the premier community-based
+                                academic institutions in the region.
+                            </p>
+
+                            <p class="text-gray-600 leading-relaxed">
+                                Established by distinguished academicians and dedicated social activists, we have
+                                consistently maintained our commitment to providing quality education that transforms
+                                lives and builds stronger communities.
+                            </p>
+                        </div>
+
+                        <!--==== Key Features ====-->
+                        <div class="grid grid-cols-2 gap-4 pt-4">
+                            <div class="flex items-start space-x-3">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center">
+                                    <img src="/assets/svg/book-open-white.svg" class="w-6 h-6 " alt="">
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Quality Education</h4>
+                                    <p class="text-sm text-gray-500">Comprehensive curriculum</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center">
+                                    <img src="/assets/svg/users-white.svg" class="w-6 h-6 " alt="">
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Expert Faculty</h4>
+                                    <p class="text-sm text-gray-500">Experienced educators</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center">
+                                    <img src="/assets/svg/building-white.svg" class="w-6 h-6 " alt="">
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Modern Facilities</h4>
+                                    <p class="text-sm text-gray-500">State-of-the-art campus</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center">
+                                    <img src="/assets/svg/badge-check-white.svg" class="w-6 h-6 " alt="">
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Accredited</h4>
+                                    <p class="text-sm text-gray-500">TU affiliated programs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--======= Notice Board  ========-->
             <div class="col-span-4 lg:col-span-1 p-2 lg:p-0 lg:pr-3 relative min-h-[660px]">
                 <div
-                    class="bg-white rounded-2xl border border-gray-200 shadow-md  absolute w-full top-[-120px] right-0">
-                    <div class="bg-yellow-500/80 text-white p-6">
+                    class="bg-white rounded-2xl border border-gray-200 shadow-md absolute w-full top-[-170px] right-8 z-20 shadow-md">
+                    <div class="bg-yellow-500/80 text-white p-6 rounded-tl-2xl rounded-tr-2xl">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
@@ -624,12 +634,12 @@
     </section>
 
     <!--============================ Message Section ===================================-->
-    <section class="min-h-screen w-full flex flex-col items-center justify-center py-5 md:px-12">
+    <section class="min-h-screen w-full flex flex-col items-start justify-center md:px-12">
 
         <div class="swiper mySwiper2 relative w-full h-[20%]">
             <div class="swiper-wrapper h-[500px]">
                 <!--========= Slide 1 =========-->
-                <div class="swiper-slide relative h-full mx-auto px-5 flex items-center">
+                <div class="swiper-slide relative h-full mx-auto px-5 flex items-start">
                     <div class="mx-auto px-4">
                         <div class="max-w-6xl mx-auto">
                             <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -683,8 +693,8 @@
                     </div>
                 </div>
 
-                <!--========= Slide 1 =========-->
-                <div class="swiper-slide relative h-full mx-auto px-5 flex items-center">
+                <!--========= Slide 2 =========-->
+                <div class="swiper-slide relative h-full mx-auto px-5 flex items-start">
                     <div class="mx-auto px-4">
                         <div class="max-w-6xl mx-auto">
                             <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -738,6 +748,60 @@
                     </div>
                 </div>
 
+                <!--========= Slide 3 =========-->
+                <div class="swiper-slide relative h-full mx-auto px-5 flex items-start">
+                    <div class="mx-auto px-4">
+                        <div class="max-w-6xl mx-auto">
+                            <div class="grid md:grid-cols-2 gap-8 items-center">
+                                <!-- ===== Left Content ======-->
+                                <div class="space-y-6">
+                                    <div class="flex items-center justify-between mb-8">
+                                        <h1 class="text-4xl font-bold text-gray-800">Message From the campus chief</h1>
+                                    </div>
+                                    <div
+                                        class="inline-flex items-center justify-center w-12 h-12 bg-yellow-500 rounded-full mb-4">
+                                        <img src="/assets/svg/quote-white.svg" class="w-4 h-4" alt="">
+                                    </div>
+
+                                    <div>
+                                        <p class="text-gray-700 leading-relaxed mb-4">
+                                            <span class="font-semibold">Dear Students and Parents,</span>
+                                        </p>
+
+                                        <p class="text-gray-600 leading-relaxed">
+                                            Founded by distinguished academicians and social activists in 2064 B.S. at
+                                            Kanchan Rural Municipality-3, Haraiya, and affiliated to Tribhuvan
+                                            University,
+                                            Nepal, is proud to call itself one of the premier community based academic
+                                            institutions of the mu...
+                                        </p>
+
+                                        <a href="#"
+                                            class="inline-flex items-center text-yellow-500 font-medium mt-4 hover:text-yellow-700 transition">
+                                            Read More
+                                            <img src="/assets/svg/arrow-right-yellow.svg"
+                                                class="w-5 h-5 ml-2 pointer-events-none" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="pt-2">
+                                        <h3 class="text-2xl font-semibold text-gray-800 italic">Prakash Khanal</h3>
+                                        <p class="text-gray-500 italic">Campus Chief</p>
+                                    </div>
+                                </div>
+
+                                <!--======== Right Image =======-->
+                                <div class="flex justify-center items-center relative">
+                                    <div
+                                        class="relative z-10 w-80 h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white">
+                                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
+                                            alt="Campus Chief" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -757,7 +821,7 @@
 
                 <!--========== Autoplay timer progress =======-->
                 <div
-                    class="autoplay-progress absolute left-[120px] bottom-0 z-10 w-[48px] h-[48px] flex items-center justify-center font-bold text-blue-500">
+                    class="autoplay-progress absolute left-[120px] bottom-0 z-10 w-[48px] h-[48px] flex items-center justify-center font-bold text-yellow-500">
                     <svg viewBox="0 0 48 48">
                         <circle cx="24" cy="24" r="20"></circle>
                     </svg>

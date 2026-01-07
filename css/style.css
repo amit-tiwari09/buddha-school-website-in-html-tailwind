@@ -23,7 +23,7 @@
   height: 100%;
   stroke-width: 4px;
   stroke: var(--swiper-theme-color);
-  stroke: blue;
+  stroke: #f7df06;
   fill: none;
   stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
   stroke-dasharray: 125.6;
