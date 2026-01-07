@@ -319,7 +319,7 @@
     </header>
 
     <!--============================ Hero Section ===================================-->
-    <section id="hero-section" class="h-[80vh] w-full relative ">
+    <section id="hero-section" class="h-[80vh] w-full relative overflow-hidden">
         <div class="swiper mySwiper relative w-full h-full">
             <div class="swiper-wrapper">
 
@@ -473,25 +473,107 @@
     </section>
 
     <!--============================ Notice Board & About us Section ===================================-->
-    <!-- <section id="notice-board-section" class="w-full bg-white/90 py-5 pt-12 overflow-visible bg-red-500"> -->
-    <section id="notice-board-section" class="w-full py-5 pt-12 overflow-visible bg-red-500">
+    <section id="notice-board-section" class="w-full bg-white/90 py-5 pt-12">
         <div class="grid grid-cols-4 h-full">
             <div class="col-span-4 lg:col-span-3 flex flex-col md:flex-row gap-2 px-1.5 xl:pl-5 xl:pr-5">
                 <!--======= Image section  ========-->
                 <div class="flex-1 flex items-start justify-center p-2 relative group">
+                    <img src="/assets/img/school-image.jpg"
+                        class="h-full md:h-[80%] w-full shadow-lg rounded-xl group-hover:scale-105 transition-all duration-300"
+                        alt="">
 
+                    <!--============ Overlapping Cards ========-->
+                    <div
+                        class="absolute bottom-[-45px] md:bottom-20 left-1/2 transform -translate-x-1/2 flex gap-4 z-10 w-full md:w-[85%]">
+
+                        <div class="flex-1 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-md">
+                            <div class="text-2xl font-bold text-yellow-400">500+</div>
+                            <div class="text-xs">Students</div>
+                        </div>
+
+
+                        <div class="flex-1 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-md">
+                            <div class="text-2xl  font-bold text-yellow-400">50+</div>
+                            <div class="text-xs ">Teachers</div>
+                        </div>
+
+
+                        <div class="flex-1 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-md">
+                            <div class="text-2xl  font-bold text-yellow-400">25+</div>
+                            <div class="text-xs ">years of experience</div>
+                        </div>
+
+                    </div>
                 </div>
 
                 <!--======= About us section  ========-->
                 <div class="flex-1 p-2 pt-12">
+                    <div>
+                        <span
+                            class="flex items-center gap-2 text-yellow-400 font-medium tracking-wider uppercase text-sm">
+                            <span class="w-8 h-0.5 bg-yellow-500 rounded-full"></span>
+                            About Our School
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-6">
+                            Where Wisdom Meets Education
+                        </h2>
+                        <p class="text-gray-800 leading-relaxed mb-4">
+                            Buddha School, nestled in the sacred
+                            birthplace of Lord Buddha in Lumbini, has been a beacon of holistic education since 1999.
+                            Our institution uniquely combines the timeless wisdom of Buddhist teachings with
+                            contemporary academic excellence.
+                            <br>
+                            <br>
+                            We believe in nurturing not just the
+                            intellect, but also the heart and spirit of every student. Through mindfulness practices,
+                            ethical teachings, and rigorous academics, we prepare our students to be compassionate
+                            leaders of tomorrow.
+                        </p>
 
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center">
+                                    <img src="/assets/svg/sun.svg" alt="">
+                                </div>
+                                <span class="text-sm font-medium ">Daily Meditation</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center">
+                                    <img src="/assets/svg/book-open.svg" alt="">
+                                </div>
+                                <span class="text-sm font-medium ">Modern Curriculumn</span>
+                            </div>
+
+
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center">
+                                    <img src="/assets/svg/tree-palm.svg" alt="">
+                                </div>
+                                <span class="text-sm font-medium ">Eco Friendly campus</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center">
+                                    <img src="/assets/svg/award.svg" alt="">
+                                </div>
+                                <span class="text-sm font-medium ">Value based learning</span>
+                            </div>
+                        </div>
+
+                        <a href="#"
+                            class="hidden xl:inline-flex items-center gap-2 bg-yellow-400 px-6 py-3 text-white rounded-full font-semibold hover:scale-105 transition-all duration-300">
+                            Discover More
+                            <img src="/assets/svg/arrow-right-white.svg" class="w-4 h-4" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!--======= Notice Board  ========-->
-            <div class="col-span-4 lg:col-span-1 p-2 lg:p-0 lg:pr-3 relative min-h-[660px]">
-                <div
-                    class="bg-white rounded-2xl border border-gray-200 shadow-md  absolute w-full top-[-120px] right-0">
+            <div class="col-span-4 lg:col-span-1 p-2 lg:p-0 lg:pr-3">
+                <div class="bg-white rounded-2xl border border-gray-200 shadow-md overflow-hidden">
                     <div class="bg-yellow-500/80 text-white p-6">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
@@ -624,58 +706,61 @@
     </section>
 
     <!--============================ Message Section ===================================-->
-    <section class="min-h-screen w-full flex flex-col items-center justify-center py-5 md:px-12">
+    <section class="min-h-screen w-full flex flex-col items-center justify-center py-12 bg-gray-300/20 md:px-12">
+        <div class="text-center mb-12">
+            <div class="flex justify-center gap-2">
+                <img src="/assets/svg/megaphone-yellow.svg" alt="">
+                <span class="text-yellow-400 text-md font-bold uppercase tracking-wider text-sm">
+                    Leadership Messages
+                </span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mt-3">Words from Our Leaders</h2>
+        </div>
 
-        <div class="swiper mySwiper2 relative w-full h-[20%]">
-            <div class="swiper-wrapper h-[500px]">
-                <!--========= Slide 1 =========-->
+        <div class="swiper mySwiper2 relative w-full h-full">
+            <div class="swiper-wrapper">
+                <!--================== slide 1 ==================-->
                 <div class="swiper-slide relative h-full mx-auto px-5 flex items-center">
-                    <div class="mx-auto px-4">
-                        <div class="max-w-6xl mx-auto">
-                            <div class="grid md:grid-cols-2 gap-8 items-center">
-                                <!-- ===== Left Content ======-->
-                                <div class="space-y-6">
-                                    <div class="flex items-center justify-between mb-8">
-                                        <h1 class="text-4xl font-bold text-gray-800">Message From the campus chief</h1>
-                                    </div>
-                                    <div
-                                        class="inline-flex items-center justify-center w-12 h-12 bg-yellow-500 rounded-full mb-4">
-                                        <img src="/assets/svg/quote-white.svg" class="w-4 h-4" alt="">
-                                    </div>
+                    <div
+                        class="rounded-2xl shadow-lg p-2 md:p-12 bg-white lg:min-h-[450px] flex items-center justify-center">
+                        <div class="flex flex-col lg:flex-row items-center gap-10 animate-fade-in">
 
-                                    <div>
-                                        <p class="text-gray-700 leading-relaxed mb-4">
-                                            <span class="font-semibold">Dear Students and Parents,</span>
-                                        </p>
-
-                                        <p class="text-gray-600 leading-relaxed">
-                                            Founded by distinguished academicians and social activists in 2064 B.S. at
-                                            Kanchan Rural Municipality-3, Haraiya, and affiliated to Tribhuvan
-                                            University,
-                                            Nepal, is proud to call itself one of the premier community based academic
-                                            institutions of the mu...
-                                        </p>
-
-                                        <a href="#"
-                                            class="inline-flex items-center text-yellow-500 font-medium mt-4 hover:text-yellow-700 transition">
-                                            Read More
-                                            <img src="/assets/svg/arrow-right-yellow.svg"
-                                                class="w-5 h-5 ml-2 pointer-events-none" alt="">
-                                        </a>
-                                    </div>
-
-                                    <div class="pt-2">
-                                        <h3 class="text-2xl font-semibold text-gray-800 italic">Prakash Khanal</h3>
-                                        <p class="text-gray-500 italic">Campus Chief</p>
-                                    </div>
+                            <div class="w-full space-y-5 p-2">
+                                <div class="space-y-1">
+                                    <h3 class="text-sm md:text-2xl md:text-3xl font-bold">Message from our Chairman</h3>
+                                    <div class="w-32 h-1 bg-yellow-500 rounded-full"></div>
                                 </div>
+                                <div class="md:space-y-4 leading-relaxed">
+                                    <p class="text-sm">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum ipsam
+                                        minima recusandae iste praesentium ipsum officiis molestias eveniet dolorum ex
+                                        consequatur provident, soluta velit, explicabo ipsa, suscipit nihil totam?
+                                        Suscipit quasi vitae praesentium repudiandae! Dolor impedit atque ex. Fugiat
+                                        incidunt, aliquid ab perspiciatis consectetur quaerat nisi voluptatibus a
+                                        suscipit adipisci veritatis, optio illo, maxime tenetur dolore minima ipsam
+                                        cumque.
+                                    </p>
+                                </div>
+                            </div>
 
-                                <!--======== Right Image =======-->
-                                <div class="flex justify-center items-center relative">
+                            <div class="w-full flex justify-center">
+                                <div class="relative">
+                                    <!--=== Circles around the image ===== -->
+                                    <div class="absolute inset-0 rounded-full border-4 border-yellow-500/10 scale-110">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-full border-2 border-yellow-500/70 scale-125">
+                                    </div>
+
+                                    <!--==== image ======-->
                                     <div
-                                        class="relative z-10 w-80 h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white">
-                                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
-                                            alt="Campus Chief" class="w-full h-full object-cover">
+                                        class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-md relative z-10">
+                                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&amp;h=400&amp;fit=crop&amp;crop=face"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute -bottom-3 -right-3 w-12 h-12 bg-yellow-500/10 rounded-full z-0">
+                                    </div>
+                                    <div class="absolute -top-3 -left-3 w-8 h-8 bg-yellow-500/10 rounded-full z-0">
                                     </div>
                                 </div>
                             </div>
@@ -683,81 +768,74 @@
                     </div>
                 </div>
 
-                <!--========= Slide 1 =========-->
+                <!--================== slide 2 ==================-->
                 <div class="swiper-slide relative h-full mx-auto px-5 flex items-center">
-                    <div class="mx-auto px-4">
-                        <div class="max-w-6xl mx-auto">
-                            <div class="grid md:grid-cols-2 gap-8 items-center">
-                                <!-- ===== Left Content ======-->
-                                <div class="space-y-6">
-                                    <div class="flex items-center justify-between mb-8">
-                                        <h1 class="text-4xl font-bold text-gray-800">Message From the campus chief</h1>
-                                    </div>
-                                    <div
-                                        class="inline-flex items-center justify-center w-12 h-12 bg-yellow-500 rounded-full mb-4">
-                                        <img src="/assets/svg/quote-white.svg" class="w-4 h-4" alt="">
-                                    </div>
+                    <div
+                        class="rounded-2xl shadow-lg p-2 md:p-12 bg-white lg:min-h-[450px] flex items-center justify-center">
+                        <div class="flex flex-col lg:flex-row items-center gap-10 animate-fade-in">
 
-                                    <div>
-                                        <p class="text-gray-700 leading-relaxed mb-4">
-                                            <span class="font-semibold">Dear Students and Parents,</span>
-                                        </p>
-
-                                        <p class="text-gray-600 leading-relaxed">
-                                            Founded by distinguished academicians and social activists in 2064 B.S. at
-                                            Kanchan Rural Municipality-3, Haraiya, and affiliated to Tribhuvan
-                                            University,
-                                            Nepal, is proud to call itself one of the premier community based academic
-                                            institutions of the mu...
-                                        </p>
-
-                                        <a href="#"
-                                            class="inline-flex items-center text-yellow-500 font-medium mt-4 hover:text-yellow-700 transition">
-                                            Read More
-                                            <img src="/assets/svg/arrow-right-yellow.svg"
-                                                class="w-5 h-5 ml-2 pointer-events-none" alt="">
-                                        </a>
-                                    </div>
-
-                                    <div class="pt-2">
-                                        <h3 class="text-2xl font-semibold text-gray-800 italic">Prakash Khanal</h3>
-                                        <p class="text-gray-500 italic">Campus Chief</p>
-                                    </div>
+                            <div class="w-full space-y-5 p-2">
+                                <div class="space-y-1">
+                                    <h3 class="text-sm md:text-2xl md:text-3xl font-bold">Message from our Chairman</h3>
+                                    <div class="w-32 h-1 bg-yellow-500 rounded-full"></div>
                                 </div>
+                                <div class="md:space-y-4 leading-relaxed">
+                                    <p class="text-sm">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum ipsam
+                                        minima recusandae iste praesentium ipsum officiis molestias eveniet dolorum ex
+                                        consequatur provident, soluta velit, explicabo ipsa, suscipit nihil totam?
+                                        Suscipit quasi vitae praesentium repudiandae! Dolor impedit atque ex. Fugiat
+                                        incidunt, aliquid ab perspiciatis consectetur quaerat nisi voluptatibus a
+                                        suscipit adipisci veritatis, optio illo, maxime tenetur dolore minima ipsam
+                                        cumque.
+                                    </p>
+                                </div>
+                            </div>
 
-                                <!--======== Right Image =======-->
-                                <div class="flex justify-center items-center relative">
+                            <div class="w-full flex justify-center">
+                                <div class="relative">
+                                    <!--=== Circles around the image ===== -->
+                                    <div class="absolute inset-0 rounded-full border-4 border-yellow-500/10 scale-110">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-full border-2 border-yellow-500/70 scale-125">
+                                    </div>
+
+                                    <!--==== image ======-->
                                     <div
-                                        class="relative z-10 w-80 h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white">
-                                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
-                                            alt="Campus Chief" class="w-full h-full object-cover">
+                                        class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-md relative z-10">
+                                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&amp;h=400&amp;fit=crop&amp;crop=face"
+                                            class="w-full h-full object-cover">
+                                    </div>
+                                    <div
+                                        class="absolute -bottom-3 -right-3 w-12 h-12 bg-yellow-500/10 rounded-full z-0">
+                                    </div>
+                                    <div class="absolute -top-3 -left-3 w-8 h-8 bg-yellow-500/10 rounded-full z-0">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
 
             </div>
 
-
-            <div class="swiper-scnd-pagination absolute flex flex-col gap-3 text-yellow-500"></div>
-            <!-- ====== Navigation Buttons ======= -->
-            <div class="flex justify-center items-center space-x-4">
+            <!--================ Navigation buttons ===========-->
+            <div class="flex gap-3 pt-2 items-center justify-start px-5">
+                <!--======= Prev button =======-->
                 <button
-                    class="swiper-scnd-button-prev custom-nav w-14 h-14 bg-yellow-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition shadow-lg">
-                    <img src="/assets/svg/cheveron-left-white.svg" class="w-6 h-6 pointer-events-none" alt="">
+                    class="swiper-scnd-button-prev custom-nav w-12 h-12 bg-yellow-500/60 hover:bg-yellow-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm">
+                    <img src="/assets/svg/cheveron-left-white.svg" class="w-8 h-8 pointer-events-none" alt="">
                 </button>
 
+                <!--========== Next button =======-->
                 <button
-                    class="swiper-scnd-button-next w-14 h-14 bg-yellow-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition shadow-lg">
-                    <img src="/assets/svg/cheveron-right-white.svg" class="w-6 h-6 pointer-events-none" alt="">
+                    class="swiper-scnd-button-next custom-nav w-12 h-12 bg-yellow-500/60 hover:bg-yellow-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm">
+                    <img src="/assets/svg/cheveron-right-white.svg" class="w-8 h-8 pointer-events-none" alt="">
                 </button>
 
                 <!--========== Autoplay timer progress =======-->
                 <div
-                    class="autoplay-progress absolute left-[120px] bottom-0 z-10 w-[48px] h-[48px] flex items-center justify-center font-bold text-blue-500">
+                    class="autoplay-progress absolute right-[16px] bottom-0 z-10 w-[48px] h-[48px] flex items-center justify-center font-bold text-yellow-500">
                     <svg viewBox="0 0 48 48">
                         <circle cx="24" cy="24" r="20"></circle>
                     </svg>
@@ -765,8 +843,8 @@
                 </div>
 
             </div>
-        </div>
 
+        </div>
     </section>
 
     <!--============================ Events Section ===================================-->
@@ -991,6 +1069,10 @@
         </div>
 
     </section>
+
+
+
+
 
 
     <!-- Swiper JS -->
