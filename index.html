@@ -12,67 +12,63 @@
 
 <body class="min-h-screen w-full">
 
-
-
-
-    
-<div id="sidebar"
-    class="fixed  left-0 h-full bg-white shadow transform transition-transform duration-500 ease-in-out z-[60] flex flex-col w-full bg-green-400 -translate-x-full">
-    <div class="w-full flex items-center justify-end">
-        <button class="lg:hidden p-2 transition-colors toggle-sidebar">
-            <img src="/assets/svg/x.svg" class="w-6 h-6 pointer-events-none" alt="">
-        </button>
-    </div>
-
-    <nav class="flex  flex-col items-center gap-1">
-
-        <!--========== Home ===========-->
-        <div>
-            <a href="/index.html"
-                class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-colors">
-                <span class="sidebar-text">Home</span>
-            </a>
-        </div>
-
-        <!--========== About ===========-->
-        <div>
-            <a href="/index.html"
-                class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-colors">
-                <span class="sidebar-text">About</span>
-            </a>
-        </div>
-
-        <!--========== Activities  ===========-->
-        <div>
-            <button id="activities"
-                class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
-                <div class="flex items-center gap-3 pointer-events-none">
-                    Activities
-                </div>
-                <img id="activities-icon" src="/assets/svg/cheveron-right.svg"
-                    class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
+    <div id="sidebar"
+        class="fixed  left-0 h-full bg-white shadow transform transition-transform duration-500 ease-in-out z-[60] flex flex-col w-full bg-green-400 -translate-x-full">
+        <div class="w-full flex items-center justify-end">
+            <button class="lg:hidden p-2 transition-colors toggle-sidebar">
+                <img src="/assets/svg/x.svg" class="w-6 h-6 pointer-events-none" alt="">
             </button>
         </div>
 
-        <div id="activities-submenu" class="mt-1 space-y-1 sidebar-submenu">
-            <a href="#"
-                class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
-                Our Activity
-            </a>
+        <nav class="flex  flex-col items-center gap-1">
 
-            <a href="#"
-                class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
-                Upcoming Activity
-            </a>
+            <!--========== Home ===========-->
+            <div>
+                <a href="/index.html"
+                    class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-colors">
+                    <span class="sidebar-text">Home</span>
+                </a>
+            </div>
 
-        </div>
+            <!--========== About ===========-->
+            <div>
+                <a href="/index.html"
+                    class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-colors">
+                    <span class="sidebar-text">About</span>
+                </a>
+            </div>
 
-    </nav>
-</div>
+            <!--========== Activities  ===========-->
+            <div>
+                <button id="activities"
+                    class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
+                    <div class="flex items-center gap-3 pointer-events-none">
+                        Activities
+                    </div>
+                    <img id="activities-icon" src="/assets/svg/cheveron-right.svg"
+                        class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
+                </button>
+            </div>
+
+            <div id="activities-submenu" class="mt-1 space-y-1 sidebar-submenu">
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
+                    Our Activity
+                </a>
+
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
+                    Upcoming Activity
+                </a>
+
+            </div>
+
+        </nav>
+    </div>
 
 
     <!--============================ Top Header Section ===================================-->
-    <section id="top-header" class="text-white py-3 bg-blue-500/80 mx-auto px-6 grid grid-cols-2 ">
+    <section id="top-header" class="text-white py-3 bg-blue-500 mx-auto px-6 grid grid-cols-2 ">
 
         <!--======== contact details =========-->
         <div class="col-span-1 hidden md:flex items-center justify-start gap-5 text-sm px-5">
