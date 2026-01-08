@@ -13,6 +13,14 @@
   left: 90% !important;
 }
 
+.swiper-thrd-pagination {
+ 
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  bottom: 0 !important;
+}
+
 .autoplay-progress svg {
   --progress: 0;
   position: absolute;

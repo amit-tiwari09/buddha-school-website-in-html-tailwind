@@ -42,6 +42,30 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+
+
+
+    new Swiper(".mySwiper3", {
+        loop: true,
+        spaceBetween: 16,
+        slidesPerView: 3,
+
+        navigation: {
+            nextEl: ".swiper-thrd-button-next",
+            prevEl: ".swiper-thrd-button-prev",
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+
+        pagination: {
+            el: ".swiper-thrd-pagination",
+            clickable: true,
+        },
+    });
+
+
 });
 
 
