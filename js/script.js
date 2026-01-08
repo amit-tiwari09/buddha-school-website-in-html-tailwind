@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-
     new Swiper(".mySwiper3", {
         loop: true,
         spaceBetween: 16,
@@ -80,7 +79,6 @@ document.addEventListener("click", function (event) {
         toggleSubmenu(event.target.id);
     }
 })
-
 
 
 function toggleSubmenu(id) {
