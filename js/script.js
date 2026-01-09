@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             clickable: true,
         },
         autoplay: {
-            delay: 3000,
+            delay: 300000000,
             disableOnInteraction: false
         },
         on: {
@@ -46,8 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     new Swiper(".mySwiper3", {
         loop: true,
-        spaceBetween: 16,
+        spaceBetween: 10,
         slidesPerView: 1,
+        breakpoints: {
+            768: {
+                slidesPerView: 2, // md
+            },
+            1024: {
+                slidesPerView: 3, // lg
+            }
+        },
 
         navigation: {
             nextEl: ".swiper-thrd-button-next",
