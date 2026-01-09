@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.object-inherit {
+  object-fit: inherit;
+}
+
 .swiper-navigation-icon {
   display: none;
 }
@@ -14,11 +18,14 @@
 }
 
 .swiper-thrd-pagination {
- 
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
   bottom: 0 !important;
+}
+
+.autoplay-progress{
+  left: 0 !important;
 }
 
 .autoplay-progress svg {
@@ -41,3 +48,4 @@
 .swiper-pagination-bullet-active {
   background: #0000ff !important;
 }
+
