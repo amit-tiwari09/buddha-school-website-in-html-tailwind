@@ -33,7 +33,7 @@ var swiper = new Swiper(".mySwiper2", {
         clickable: true,
     },
     autoplay: {
-        delay: 300000000,
+        delay: 3000,
         disableOnInteraction: false
     },
     on: {
