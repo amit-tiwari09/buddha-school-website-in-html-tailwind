@@ -24,7 +24,7 @@
   bottom: 0 !important;
 }
 
-.autoplay-progress{
+.autoplay-progress {
   left: 0 !important;
 }
 
@@ -48,4 +48,5 @@
 .swiper-pagination-bullet-active {
   background: #0000ff !important;
 }
+
 

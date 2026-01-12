@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Article</title>
+    <title>Teacher Article</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -224,34 +224,55 @@
                     <!--======== Home =======-->
                     <div class="relative group">
                         <a href="/index.html"
-                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black  transition-all rounded-lg">
+                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black group-hover:bg-blue-100 transition-all rounded-lg duration-200">
                             Home
                         </a>
                     </div>
 
                     <!--======== About =======-->
                     <div class="relative group">
-                        <a href="/pages/about-us.html"
-                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black  transition-all rounded-lg">
+                        <button type="button"
+                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium  group-hover:bg-blue-100 rounded-lg transition-all pr-2 duration-200">
                             About
-                        </a>
+                            <img src="/assets/svg/cheveron-down.svg"
+                                class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300">
+                        </button>
+                        <div
+                            class="bg-white absolute left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 rounded-lg shadow-md border min-w-[190px] py-2 overflow-hidden">
+                            <a href="/pages/about/about-us.html"
+                                class="block px-4 py-2.5 text-sm hover:bg-blue-500/10 hover: transition-colors">
+                                About us
+                            </a>
+                            <a href="/pages/about/organization-structure.html"
+                                class="block px-4 py-2.5 text-sm hover:bg-blue-500/10 hover: transition-colors">
+                                Organization Structure
+                            </a>
+                            <a href="/pages/about/team.html"
+                                class="block px-4 py-2.5 text-sm hover:bg-blue-500/10 hover: transition-colors">
+                                Team
+                            </a>
+                            <a href="/pages/about/assembly-member.html"
+                                class="block px-4 py-2.5 text-sm hover:bg-blue-500/10 hover: transition-colors">
+                                Assembly Member
+                            </a>
+                        </div>
                     </div>
 
                     <!--======== Activities =======-->
                     <div class="relative group">
                         <button type="button"
-                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium /80 hover: transition-colors pr-2">
+                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium group-hover:bg-blue-100 rounded-lg duration-200 transition-all pr-2">
                             Activities
                             <img src="/assets/svg/cheveron-down.svg"
                                 class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300">
                         </button>
                         <div
                             class="bg-white absolute left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 rounded-lg shadow-md border min-w-[190px] py-2 overflow-hidden">
-                            <a href="/pages/our-activity.html"
+                            <a href="/pages/activity/our-activity.html"
                                 class="block px-4 py-2.5 text-sm hover:bg-blue-500/10 hover: transition-colors">
                                 Our Activity
                             </a>
-                            <a href="/pages/upcoming-activity.html"
+                            <a href="/pages/activity/upcoming-activity.html"
                                 class="block px-4 py-2.5 text-sm hover:bg-blue-500/10 hover: transition-colors">
                                 Upcoming Activity
                             </a>
@@ -261,7 +282,7 @@
                     <!--======== Publication =======-->
                     <div class="relative group">
                         <a href="/pages/publication.html"
-                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black  transition-all rounded-lg">
+                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black group-hover:bg-blue-100 rounded-lg duration-200 transition-all rounded-lg">
                             Publication
                         </a>
                     </div>
@@ -269,18 +290,18 @@
                     <!--======== Articles =======-->
                     <div class="relative group">
                         <button type="button"
-                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium /80 hover: transition-colors pr-2">
+                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium group-hover:bg-blue-100 rounded-lg duration-200 transition-all  pr-2">
                             Articles
                             <img src="/assets/svg/cheveron-down.svg"
                                 class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300">
                         </button>
                         <div
                             class="bg-white absolute left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 rounded-lg shadow-md border min-w-[190px] py-2 overflow-hidden">
-                            <a href="/pages/teacher-article.html"
+                            <a href="/pages/article/teacher-article.html"
                                 class="block px-4 py-2.5 text-sm hover:bg-blue-500/10 hover: transition-colors">
                                 Teacher Articles
                             </a>
-                            <a href="/pages/student-article.html"
+                            <a href="/pages/article/student-article.html"
                                 class="block px-4 py-2.5 text-sm hover:bg-blue-500/10 hover: transition-colors">
                                 Student Articles
                             </a>
@@ -290,7 +311,7 @@
                     <!--======== Gallery =======-->
                     <div class="relative group">
                         <a href="/pages/gallery.html"
-                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black  transition-all rounded-lg">
+                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black group-hover:bg-blue-100 rounded-lg duration-200 transition-all rounded-lg">
                             Gallery
                         </a>
                     </div>
@@ -298,7 +319,7 @@
                     <!--======== Vacancy =======-->
                     <div class="relative group">
                         <a href="/pages/vacancy.html"
-                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black  transition-all rounded-lg">
+                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black group-hover:bg-blue-100 rounded-lg duration-200 transition-all rounded-lg">
                             Vacancy
                         </a>
                     </div>
@@ -306,7 +327,7 @@
                     <!--======== Contact =======-->
                     <div class="relative group">
                         <a href="/pages/contact-us.html"
-                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black  transition-all rounded-lg">
+                            class="flex items-center gap-1 px-4 py-2 text-sm font-medium text-black group-hover:bg-blue-100 rounded-lg duration-200 transition-all rounded-lg">
                             Contact
                         </a>
                     </div>
@@ -325,10 +346,17 @@
     <section class="w-full min-h-screen">
 
         <!--=============== Main Section Text ===============-->
-        <div class="bg-gradient-to-r from-blue-500 to-blue-400 text-white py-16">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <p class="text-sm uppercase tracking-wider mb-2">Welcome to Buddha School</p>
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Student Articles</h2>
+        <div class="relative py-16 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600"
+                alt="Buddha School Background" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-blue-600/50"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+                <p class="text-sm uppercase tracking-wider mb-2">
+                    Welcome to Buddha School
+                </p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                   Teacher Article
+                </h2>
                 <p class="text-lg text-blue-100 max-w-2xl mx-auto">
                     Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
                 </p>
@@ -343,7 +371,7 @@
                     <h3 class="text-3xl font-bold text-gray-800">Recent Articles</h3>
                 </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-5">
 
                     <!--======= Article Card 1 =======-->
                     <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
@@ -353,7 +381,7 @@
                                 class="h-full w-full object-cover" alt="">
                             <span
                                 class="absolute top-4 right-4 bg-white text-purple-600 text-xs px-3 py-1 rounded-full font-semibold">
-                                Student Voices
+                                Student Development
                             </span>
                         </div>
                         <div class="p-6">
@@ -362,16 +390,16 @@
                                     alt="Author" class="w-10 h-10 rounded-full">
                                 <div>
                                     <h6 class="font-semibold text-gray-800 text-sm">Michael Chen</h6>
-                                    <p class="text-xs text-gray-600">9th grader</p>
+                                    <p class="text-xs text-gray-600">Psychology Instructor</p>
                                 </div>
                             </div>
                             <h4 class="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
-                                How students overcome challenges and grow through learning.
+                                Building Emotional Intelligence in Young Learners
                             </h4>
                             <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores vitae sed quod
-                                dolorem aut, repudiandae dolore corporis aspernatur veritatis commodi ipsam dolorum
-                                expedita saepe maxime vel animi sit a?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet officia facere
+                                dicta quisquam minima non explicabo ullam perferendis omnis eligendi dolor iusto quis,
+                                ex quae porro consectetur soluta dignissimos.
                             </p>
                             <div class="flex items-center gap-3 text-xs text-gray-500 mb-4">
                                 <span class="inline-flex justify-center items-center gap-2">
@@ -404,7 +432,7 @@
                                 class="h-full w-full object-cover" alt="">
                             <span
                                 class="absolute top-4 right-4 bg-white text-purple-600 text-xs px-3 py-1 rounded-full font-semibold">
-                                Student Voices
+                                Student Development
                             </span>
                         </div>
                         <div class="p-6">
@@ -413,16 +441,16 @@
                                     alt="Author" class="w-10 h-10 rounded-full">
                                 <div>
                                     <h6 class="font-semibold text-gray-800 text-sm">Michael Chen</h6>
-                                    <p class="text-xs text-gray-600">9th grader</p>
+                                    <p class="text-xs text-gray-600">Psychology Instructor</p>
                                 </div>
                             </div>
                             <h4 class="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
-                                How students overcome challenges and grow through learning.
+                                Building Emotional Intelligence in Young Learners
                             </h4>
                             <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores vitae sed quod
-                                dolorem aut, repudiandae dolore corporis aspernatur veritatis commodi ipsam dolorum
-                                expedita saepe maxime vel animi sit a?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet officia facere
+                                dicta quisquam minima non explicabo ullam perferendis omnis eligendi dolor iusto quis,
+                                ex quae porro consectetur soluta dignissimos.
                             </p>
                             <div class="flex items-center gap-3 text-xs text-gray-500 mb-4">
                                 <span class="inline-flex justify-center items-center gap-2">
@@ -455,7 +483,7 @@
                                 class="h-full w-full object-cover" alt="">
                             <span
                                 class="absolute top-4 right-4 bg-white text-purple-600 text-xs px-3 py-1 rounded-full font-semibold">
-                                Student Voices
+                                Student Development
                             </span>
                         </div>
                         <div class="p-6">
@@ -464,16 +492,16 @@
                                     alt="Author" class="w-10 h-10 rounded-full">
                                 <div>
                                     <h6 class="font-semibold text-gray-800 text-sm">Michael Chen</h6>
-                                    <p class="text-xs text-gray-600">9th grader</p>
+                                    <p class="text-xs text-gray-600">Psychology Instructor</p>
                                 </div>
                             </div>
                             <h4 class="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
-                                How students overcome challenges and grow through learning.
+                                Building Emotional Intelligence in Young Learners
                             </h4>
                             <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores vitae sed quod
-                                dolorem aut, repudiandae dolore corporis aspernatur veritatis commodi ipsam dolorum
-                                expedita saepe maxime vel animi sit a?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet officia facere
+                                dicta quisquam minima non explicabo ullam perferendis omnis eligendi dolor iusto quis,
+                                ex quae porro consectetur soluta dignissimos.
                             </p>
                             <div class="flex items-center gap-3 text-xs text-gray-500 mb-4">
                                 <span class="inline-flex justify-center items-center gap-2">
@@ -506,7 +534,7 @@
                                 class="h-full w-full object-cover" alt="">
                             <span
                                 class="absolute top-4 right-4 bg-white text-purple-600 text-xs px-3 py-1 rounded-full font-semibold">
-                                Student Voices
+                                Student Development
                             </span>
                         </div>
                         <div class="p-6">
@@ -515,16 +543,16 @@
                                     alt="Author" class="w-10 h-10 rounded-full">
                                 <div>
                                     <h6 class="font-semibold text-gray-800 text-sm">Michael Chen</h6>
-                                    <p class="text-xs text-gray-600">9th grader</p>
+                                    <p class="text-xs text-gray-600">Psychology Instructor</p>
                                 </div>
                             </div>
                             <h4 class="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
-                                How students overcome challenges and grow through learning.
+                                Building Emotional Intelligence in Young Learners
                             </h4>
                             <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores vitae sed quod
-                                dolorem aut, repudiandae dolore corporis aspernatur veritatis commodi ipsam dolorum
-                                expedita saepe maxime vel animi sit a?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet officia facere
+                                dicta quisquam minima non explicabo ullam perferendis omnis eligendi dolor iusto quis,
+                                ex quae porro consectetur soluta dignissimos.
                             </p>
                             <div class="flex items-center gap-3 text-xs text-gray-500 mb-4">
                                 <span class="inline-flex justify-center items-center gap-2">
@@ -557,7 +585,7 @@
                                 class="h-full w-full object-cover" alt="">
                             <span
                                 class="absolute top-4 right-4 bg-white text-purple-600 text-xs px-3 py-1 rounded-full font-semibold">
-                                Student Voices
+                                Student Development
                             </span>
                         </div>
                         <div class="p-6">
@@ -566,16 +594,16 @@
                                     alt="Author" class="w-10 h-10 rounded-full">
                                 <div>
                                     <h6 class="font-semibold text-gray-800 text-sm">Michael Chen</h6>
-                                    <p class="text-xs text-gray-600">9th grader</p>
+                                    <p class="text-xs text-gray-600">Psychology Instructor</p>
                                 </div>
                             </div>
                             <h4 class="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
-                                How students overcome challenges and grow through learning.
+                                Building Emotional Intelligence in Young Learners
                             </h4>
                             <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores vitae sed quod
-                                dolorem aut, repudiandae dolore corporis aspernatur veritatis commodi ipsam dolorum
-                                expedita saepe maxime vel animi sit a?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet officia facere
+                                dicta quisquam minima non explicabo ullam perferendis omnis eligendi dolor iusto quis,
+                                ex quae porro consectetur soluta dignissimos.
                             </p>
                             <div class="flex items-center gap-3 text-xs text-gray-500 mb-4">
                                 <span class="inline-flex justify-center items-center gap-2">
@@ -608,7 +636,7 @@
                                 class="h-full w-full object-cover" alt="">
                             <span
                                 class="absolute top-4 right-4 bg-white text-purple-600 text-xs px-3 py-1 rounded-full font-semibold">
-                                Student Voices
+                                Student Development
                             </span>
                         </div>
                         <div class="p-6">
@@ -617,16 +645,16 @@
                                     alt="Author" class="w-10 h-10 rounded-full">
                                 <div>
                                     <h6 class="font-semibold text-gray-800 text-sm">Michael Chen</h6>
-                                    <p class="text-xs text-gray-600">9th grader</p>
+                                    <p class="text-xs text-gray-600">Psychology Instructor</p>
                                 </div>
                             </div>
                             <h4 class="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
-                                How students overcome challenges and grow through learning.
+                                Building Emotional Intelligence in Young Learners
                             </h4>
                             <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores vitae sed quod
-                                dolorem aut, repudiandae dolore corporis aspernatur veritatis commodi ipsam dolorum
-                                expedita saepe maxime vel animi sit a?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet officia facere
+                                dicta quisquam minima non explicabo ullam perferendis omnis eligendi dolor iusto quis,
+                                ex quae porro consectetur soluta dignissimos.
                             </p>
                             <div class="flex items-center gap-3 text-xs text-gray-500 mb-4">
                                 <span class="inline-flex justify-center items-center gap-2">
@@ -659,7 +687,7 @@
                                 class="h-full w-full object-cover" alt="">
                             <span
                                 class="absolute top-4 right-4 bg-white text-purple-600 text-xs px-3 py-1 rounded-full font-semibold">
-                                Student Voices
+                                Student Development
                             </span>
                         </div>
                         <div class="p-6">
@@ -668,16 +696,16 @@
                                     alt="Author" class="w-10 h-10 rounded-full">
                                 <div>
                                     <h6 class="font-semibold text-gray-800 text-sm">Michael Chen</h6>
-                                    <p class="text-xs text-gray-600">9th grader</p>
+                                    <p class="text-xs text-gray-600">Psychology Instructor</p>
                                 </div>
                             </div>
                             <h4 class="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
-                                How students overcome challenges and grow through learning.
+                                Building Emotional Intelligence in Young Learners
                             </h4>
                             <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores vitae sed quod
-                                dolorem aut, repudiandae dolore corporis aspernatur veritatis commodi ipsam dolorum
-                                expedita saepe maxime vel animi sit a?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet officia facere
+                                dicta quisquam minima non explicabo ullam perferendis omnis eligendi dolor iusto quis,
+                                ex quae porro consectetur soluta dignissimos.
                             </p>
                             <div class="flex items-center gap-3 text-xs text-gray-500 mb-4">
                                 <span class="inline-flex justify-center items-center gap-2">
