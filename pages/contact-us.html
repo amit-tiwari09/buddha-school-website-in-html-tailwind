@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -154,10 +155,9 @@
     </div>
 
     <!--============================ Top Header Section ===================================-->
-    <section id="top-header" class="text-white py-3 bg-blue-500 mx-auto px-6 grid grid-cols-2 ">
-
+    <section id="top-header" class="text-white py-3 bg-blue-500 mx-auto px-6 grid grid-cols-2">
         <!--======== contact details =========-->
-        <div class="col-span-1 hidden md:flex items-center justify-start gap-5 text-sm px-5">
+        <div class="col-span-1 hidden md:flex items-center justify-start gap-5 text-sm px-5" data-aos="fade-up">
             <a href="tel:+9779867548976"
                 class="flex items-center gap-1 justify-center transition-all hover:brightness-110 hover:scale-[1.02] whitespace-nowrap">
                 <img src="/assets/svg/phone-white.svg" class="w-4 h-4 pointer-events-none">
@@ -178,7 +178,8 @@
         </div>
 
         <!--======== social media links =========-->
-        <div class="col-span-2 md:col-span-1 flex flex items-center justify-center md:justify-end gap-5 text-sm px-5">
+        <div class="col-span-2 md:col-span-1 flex flex items-center justify-center md:justify-end gap-5 text-sm px-5"
+            data-aos="fade-up">
             <a href="#" target="_blank"
                 class="min-w-8 min-h-8 rounded-full bg-stone-500/50 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
                 <img src="/assets/svg/facebook-white.svg" class="w-3.5 h-3.5 pointer-events-none">
@@ -202,12 +203,11 @@
     </section>
 
     <!--============================ Header Section ===================================-->
-    <header class="bg-white/90 backdrop-blur-sm shadow-md sticky top-0 z-50">
+    <header class="bg-white/90 backdrop-blur-sm shadow-md sticky top-0 z-50 ">
         <div class="container mx-auto px-2 lg:px-12">
-
             <!--===================== Logo and Menus ======================-->
             <div class="flex items-center justify-between py-4 md:px-5 xl:px-12">
-                <a href="/" class="flex items-center gap-3 group">
+                <a href="/" class="flex items-center gap-3 group" data-aos="fade-right">
                     <div
                         class="w-14 h-14 rounded-full /10 flex items-center justify-center group-hover:/20 transition-colors">
                         <img
@@ -219,7 +219,7 @@
                     </div>
                 </a>
 
-                <nav class="hidden lg:flex items-center gap-1">
+                <nav class="hidden lg:flex items-center gap-1" data-aos="fade-left">
 
                     <!--======== Home =======-->
                     <div class="relative group">
@@ -331,32 +331,30 @@
                             Contact
                         </a>
                     </div>
-
                 </nav>
 
                 <button class="lg:hidden p-2 transition-colors toggle-sidebar">
                     <img src="/assets/svg/breadcrumb.svg" class="w-6 h-6 pointer-events-none" alt="">
                 </button>
             </div>
-
         </div>
     </header>
 
     <!--============================ Main Section ===================================-->
-    <section class="w-full min-h-screen">
+    <section class="w-full min-h-screen" data-aos="fade-up">
         <!--=============== Main Section Text ===============-->
         <div class="relative py-16 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600"
                 alt="Buddha School Background" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-blue-600/50"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-                <p class="text-sm uppercase tracking-wider mb-2">
+                <p class="text-sm uppercase tracking-wider mb-2" data-aos="fade-right">
                     Welcome to Buddha School
                 </p>
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-right">
                     Contact us
                 </h2>
-                <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+                <p class="text-lg text-blue-100 max-w-2xl mx-auto" data-aos="fade-up">
                     Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
                 </p>
             </div>
@@ -365,7 +363,8 @@
         <!--=============== Contact Info Cards ===============-->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 mb-16">
             <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 z-5">
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <!--===== Card 1 =====-->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-up">
                     <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <img src="/assets/svg/map-pin-light-blue.svg" class="w-7 h-7" alt="">
                     </div>
@@ -373,7 +372,8 @@
                     <p class="text-gray-600 text-sm">123 Education Street, Lumbini, Nepal</p>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <!--===== Card 2 =====-->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-up">
                     <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <img src="/assets/svg/phone-blue-light.svg" class="w-7 h-7" alt="">
                     </div>
@@ -381,7 +381,8 @@
                     <p class="text-gray-600 text-sm">+977 9876543210</p>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <!--===== Card 3 =====-->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-up">
                     <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <img src="/assets/svg/mail-blue-light.svg" class="w-7 h-7" alt="">
                     </div>
@@ -389,13 +390,15 @@
                     <p class="text-gray-600 text-sm">info@buddha-school.edu</p>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <!--===== Card 4 =====-->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-up">
                     <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <img src="/assets/svg/clock-blue-light.svg" class="w-7 h-7" alt="">
                     </div>
                     <h3 class="font-semibold text-gray-900 mb-2">Working Hours</h3>
                     <p class="text-gray-600 text-sm">Mon - Fri: 7:00 AM - 4:00 PM</p>
                 </div>
+
             </div>
         </div>
 
@@ -404,7 +407,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                 <!--======== Contact Form ==========-->
-                <div class="bg-white rounded-lg shadow-md p-8">
+                <div class="bg-white rounded-lg shadow-md p-8" data-aos="fade-right">
                     <div class="mb-6">
                         <p class="text-blue-500 text-sm font-semibold uppercase tracking-wider mb-2">Send Message</p>
                         <h3 class="text-3xl font-bold text-gray-900 mb-2">Get in Touch</h3>
@@ -458,7 +461,7 @@
                 </div>
 
                 <!--======== Map ==========-->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-left">
                     <div class="h-full" style="min-height: 600px;">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.0838089307126!2d83.29083367524711!3d27.528855276285327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996ed33d6ebb9ad%3A0x6b9b7483ccc4dba4!2sAppsytech%20Pvt.Ltd!5e0!3m2!1sen!2snp!4v1768106527541!5m2!1sen!2snp"
@@ -472,7 +475,7 @@
 
     <!--============================ Footer Section ===================================-->
     <footer class="text-black shadow-md border-t bg-stone-100">
-        <div class="max-w-7xl mx-auto px-4 py-16">
+        <div class="max-w-7xl mx-auto px-4 py-16" data-aos="fade-up">
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 mb-12">
                 <div>
                     <h3 class="text-lg font-bold mb-4">About Our School</h3>
@@ -654,6 +657,9 @@
             </div>
         </div>
     </footer>
+
+    <!--===== AOS Js =======-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="/js/script.js"></script>

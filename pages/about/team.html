@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -153,10 +154,9 @@
     </div>
 
     <!--============================ Top Header Section ===================================-->
-    <section id="top-header" class="text-white py-3 bg-blue-500 mx-auto px-6 grid grid-cols-2 ">
-
+    <section id="top-header" class="text-white py-3 bg-blue-500 mx-auto px-6 grid grid-cols-2">
         <!--======== contact details =========-->
-        <div class="col-span-1 hidden md:flex items-center justify-start gap-5 text-sm px-5">
+        <div class="col-span-1 hidden md:flex items-center justify-start gap-5 text-sm px-5" data-aos="fade-up">
             <a href="tel:+9779867548976"
                 class="flex items-center gap-1 justify-center transition-all hover:brightness-110 hover:scale-[1.02] whitespace-nowrap">
                 <img src="/assets/svg/phone-white.svg" class="w-4 h-4 pointer-events-none">
@@ -177,7 +177,8 @@
         </div>
 
         <!--======== social media links =========-->
-        <div class="col-span-2 md:col-span-1 flex flex items-center justify-center md:justify-end gap-5 text-sm px-5">
+        <div class="col-span-2 md:col-span-1 flex flex items-center justify-center md:justify-end gap-5 text-sm px-5"
+            data-aos="fade-up">
             <a href="#" target="_blank"
                 class="min-w-8 min-h-8 rounded-full bg-stone-500/50 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
                 <img src="/assets/svg/facebook-white.svg" class="w-3.5 h-3.5 pointer-events-none">
@@ -201,12 +202,11 @@
     </section>
 
     <!--============================ Header Section ===================================-->
-    <header class="bg-white/90 backdrop-blur-sm shadow-md sticky top-0 z-50">
+    <header class="bg-white/90 backdrop-blur-sm shadow-md sticky top-0 z-50 ">
         <div class="container mx-auto px-2 lg:px-12">
-
             <!--===================== Logo and Menus ======================-->
             <div class="flex items-center justify-between py-4 md:px-5 xl:px-12">
-                <a href="/" class="flex items-center gap-3 group">
+                <a href="/" class="flex items-center gap-3 group" data-aos="fade-right">
                     <div
                         class="w-14 h-14 rounded-full /10 flex items-center justify-center group-hover:/20 transition-colors">
                         <img
@@ -218,7 +218,7 @@
                     </div>
                 </a>
 
-                <nav class="hidden lg:flex items-center gap-1">
+                <nav class="hidden lg:flex items-center gap-1" data-aos="fade-left">
 
                     <!--======== Home =======-->
                     <div class="relative group">
@@ -330,32 +330,30 @@
                             Contact
                         </a>
                     </div>
-
                 </nav>
 
                 <button class="lg:hidden p-2 transition-colors toggle-sidebar">
                     <img src="/assets/svg/breadcrumb.svg" class="w-6 h-6 pointer-events-none" alt="">
                 </button>
             </div>
-
         </div>
     </header>
 
     <!--============================ Main Section ===================================-->
-    <section class="w-full min-h-screen bg-gray-100/40">
+    <section class="w-full min-h-screen bg-gray-100/40" data-aos="fade-up">
         <!--=============== Main Section Text ===============-->
         <div class="relative py-16 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600"
                 alt="Buddha School Background" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-blue-600/50"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-                <p class="text-sm uppercase tracking-wider mb-2">
+                <p class="text-sm uppercase tracking-wider mb-2" data-aos="fade-right">
                     Welcome to Buddha School
                 </p>
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-right">
                     Team
                 </h2>
-                <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+                <p class="text-lg text-blue-100 max-w-2xl mx-auto" data-aos="fade-up">
                     Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
                 </p>
             </div>
@@ -363,239 +361,272 @@
 
         <div class="grid grid-cols-4 h-full px-8">
             <!--======= left section (Our Team) ========-->
-            <div
-                class="col-span-4 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:px-5 gap-3 items-start justify-center py-4">
+            <div class="col-span-4 lg:col-span-3 px-5">
 
-                <!--==== Card 1 ====-->
-                <div
-                    class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                    <div class="p-5 md:p-8 text-center">
-                        <div class="inline-block mb-2 md:mb-6">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
-                                alt="Dr. Sarah Johnson"
-                                class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
-                        <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
-                        <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics with
-                            15+ years
-                            of
-                            teaching experience</p>
+                <!-- ===== Filter Section ===== -->
+                <div class="rounded-lg p-6 mb-8" data-aos="fade-right">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+                        <button
+                            class="filter-btn active px-6 py-2 rounded-full bg-blue-600 text-white font-medium transition hover:bg-blue-700">
+                            All Staff
+                        </button>
 
-                        <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/facebook-white.svg" alt="">
-                            </a>
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium transition hover:bg-gray-300">
+                            Teaching Staff
+                        </button>
 
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/insta-white.svg" alt="">
-                            </a>
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium transition hover:bg-gray-300">
+                            Non-Teaching Staff
+                        </button>
 
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/twitter-white.svg" alt="">
-                            </a>
-
-                        </div>
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium transition hover:bg-gray-300">
+                            Administrative Staff
+                        </button>
                     </div>
                 </div>
-
-                <!--==== Card 2 ====-->
                 <div
-                    class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                    <div class="p-5 md:p-8 text-center">
-                        <div class="inline-block mb-2 md:mb-6">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
-                                alt="Dr. Sarah Johnson"
-                                class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
-                        <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
-                        <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics with
-                            15+ years
-                            of
-                            teaching experience</p>
+                    class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:px-5 gap-3 items-start justify-center py-4">
 
-                        <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/facebook-white.svg" alt="">
-                            </a>
+                    <!--==== Card 1 ====-->
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
+                        data-aos="fade-up">
+                        <div class="p-5 md:p-8 text-center">
+                            <div class="inline-block mb-2 md:mb-6">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
+                                    alt="Dr. Sarah Johnson"
+                                    class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
+                            <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
+                            <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics
+                                with
+                                15+ years
+                                of
+                                teaching experience</p>
 
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/insta-white.svg" alt="">
-                            </a>
+                            <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/facebook-white.svg" alt="">
+                                </a>
 
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/twitter-white.svg" alt="">
-                            </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/insta-white.svg" alt="">
+                                </a>
 
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/twitter-white.svg" alt="">
+                                </a>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!--==== Card 3 ====-->
-                <div
-                    class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                    <div class="p-5 md:p-8 text-center">
-                        <div class="inline-block mb-2 md:mb-6">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
-                                alt="Dr. Sarah Johnson"
-                                class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
-                        <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
-                        <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics with
-                            15+ years
-                            of
-                            teaching experience</p>
+                    <!--==== Card 2 ====-->
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
+                        data-aos="fade-up">
+                        <div class="p-5 md:p-8 text-center">
+                            <div class="inline-block mb-2 md:mb-6">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
+                                    alt="Dr. Sarah Johnson"
+                                    class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
+                            <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
+                            <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics
+                                with
+                                15+ years
+                                of
+                                teaching experience</p>
 
-                        <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/facebook-white.svg" alt="">
-                            </a>
+                            <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/facebook-white.svg" alt="">
+                                </a>
 
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/insta-white.svg" alt="">
-                            </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/insta-white.svg" alt="">
+                                </a>
 
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/twitter-white.svg" alt="">
-                            </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/twitter-white.svg" alt="">
+                                </a>
 
-                        </div>
-                    </div>
-                </div>
-
-                <!--==== Card 4 ====-->
-                <div
-                    class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                    <div class="p-5 md:p-8 text-center">
-                        <div class="inline-block mb-2 md:mb-6">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
-                                alt="Dr. Sarah Johnson"
-                                class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
-                        <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
-                        <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics with
-                            15+ years
-                            of
-                            teaching experience</p>
-
-                        <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/facebook-white.svg" alt="">
-                            </a>
-
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/insta-white.svg" alt="">
-                            </a>
-
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/twitter-white.svg" alt="">
-                            </a>
-
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!--==== Card 5 ====-->
-                <div
-                    class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                    <div class="p-5 md:p-8 text-center">
-                        <div class="inline-block mb-2 md:mb-6">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
-                                alt="Dr. Sarah Johnson"
-                                class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
-                        <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
-                        <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics with
-                            15+ years
-                            of
-                            teaching experience</p>
+                    <!--==== Card 3 ====-->
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
+                        data-aos="fade-up">
+                        <div class="p-5 md:p-8 text-center">
+                            <div class="inline-block mb-2 md:mb-6">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
+                                    alt="Dr. Sarah Johnson"
+                                    class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
+                            <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
+                            <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics
+                                with
+                                15+ years
+                                of
+                                teaching experience</p>
 
-                        <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/facebook-white.svg" alt="">
-                            </a>
+                            <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/facebook-white.svg" alt="">
+                                </a>
 
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/insta-white.svg" alt="">
-                            </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/insta-white.svg" alt="">
+                                </a>
 
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/twitter-white.svg" alt="">
-                            </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/twitter-white.svg" alt="">
+                                </a>
 
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!--==== Card 6 ====-->
-                <div
-                    class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                    <div class="p-5 md:p-8 text-center">
-                        <div class="inline-block mb-2 md:mb-6">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
-                                alt="Dr. Sarah Johnson"
-                                class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
+                    <!--==== Card 4 ====-->
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
+                        data-aos="fade-up">
+                        <div class="p-5 md:p-8 text-center">
+                            <div class="inline-block mb-2 md:mb-6">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
+                                    alt="Dr. Sarah Johnson"
+                                    class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
+                            <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
+                            <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics
+                                with
+                                15+ years
+                                of
+                                teaching experience</p>
+
+                            <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/facebook-white.svg" alt="">
+                                </a>
+
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/insta-white.svg" alt="">
+                                </a>
+
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/twitter-white.svg" alt="">
+                                </a>
+
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
-                        <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
-                        <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics with
-                            15+ years
-                            of
-                            teaching experience</p>
+                    </div>
 
-                        <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/facebook-white.svg" alt="">
-                            </a>
+                    <!--==== Card 5 ====-->
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
+                        data-aos="fade-up">
+                        <div class="p-5 md:p-8 text-center">
+                            <div class="inline-block mb-2 md:mb-6">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
+                                    alt="Dr. Sarah Johnson"
+                                    class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
+                            <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
+                            <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics
+                                with
+                                15+ years
+                                of
+                                teaching experience</p>
 
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/insta-white.svg" alt="">
-                            </a>
+                            <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/facebook-white.svg" alt="">
+                                </a>
 
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                                <img src="/assets/svg/twitter-white.svg" alt="">
-                            </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/insta-white.svg" alt="">
+                                </a>
 
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/twitter-white.svg" alt="">
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==== Card 6 ====-->
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
+                        data-aos="fade-up">
+                        <div class="p-5 md:p-8 text-center">
+                            <div class="inline-block mb-2 md:mb-6">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
+                                    alt="Dr. Sarah Johnson"
+                                    class="w-24 md:w-32 h-24 md:h-32 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-200 transition-colors duration-300">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Johnson</h3>
+                            <p class="text-blue-600 font-medium mb-4">Mathematics Professor</p>
+                            <p class="text-sm text-gray-600 mb-4 md:mb-6 leading-relaxed">PhD in Applied Mathematics
+                                with
+                                15+ years
+                                of
+                                teaching experience</p>
+
+                            <div class="flex justify-center gap-3 pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/facebook-white.svg" alt="">
+                                </a>
+
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/insta-white.svg" alt="">
+                                </a>
+
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-400 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 border border-gray-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                    <img src="/assets/svg/twitter-white.svg" alt="">
+                                </a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -605,8 +636,8 @@
             <div class="col-span-4 lg:col-span-1 mb-3 lg:p-0 lg:pr-3 relative w-full">
                 <div class="relative lg:pt-[300px] w-full">
                     <!--======= Nav Links Section ========-->
-                    <div
-                        class="bg-white rounded-2xl border border-gray-200 shadow-md lg:absolute w-full lg:top-[-65px] lg:right-[-10px] z-20 shadow-md">
+                    <div class="bg-white rounded-2xl border border-gray-200 shadow-md lg:absolute w-full lg:top-[-65px] lg:right-[-10px] z-20 shadow-md"
+                        data-aos="fade-up">
                         <!--====== header =======-->
                         <div
                             class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-tl-2xl rounded-tr-2xl">
@@ -730,7 +761,7 @@
 
     <!--============================ Footer Section ===================================-->
     <footer class="text-black shadow-md border-t bg-stone-100">
-        <div class="max-w-7xl mx-auto px-4 py-16">
+        <div class="max-w-7xl mx-auto px-4 py-16" data-aos="fade-up">
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 mb-12">
                 <div>
                     <h3 class="text-lg font-bold mb-4">About Our School</h3>
@@ -912,6 +943,9 @@
             </div>
         </div>
     </footer>
+
+    <!--===== AOS Js =======-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="/js/script.js"></script>

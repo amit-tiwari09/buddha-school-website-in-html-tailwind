@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacancy</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body class="min-h-screen w-full">
@@ -154,10 +156,9 @@
     </div>
 
     <!--============================ Top Header Section ===================================-->
-    <section id="top-header" class="text-white py-3 bg-blue-500 mx-auto px-6 grid grid-cols-2 ">
-
+    <section id="top-header" class="text-white py-3 bg-blue-500 mx-auto px-6 grid grid-cols-2">
         <!--======== contact details =========-->
-        <div class="col-span-1 hidden md:flex items-center justify-start gap-5 text-sm px-5">
+        <div class="col-span-1 hidden md:flex items-center justify-start gap-5 text-sm px-5" data-aos="fade-up">
             <a href="tel:+9779867548976"
                 class="flex items-center gap-1 justify-center transition-all hover:brightness-110 hover:scale-[1.02] whitespace-nowrap">
                 <img src="/assets/svg/phone-white.svg" class="w-4 h-4 pointer-events-none">
@@ -178,7 +179,8 @@
         </div>
 
         <!--======== social media links =========-->
-        <div class="col-span-2 md:col-span-1 flex flex items-center justify-center md:justify-end gap-5 text-sm px-5">
+        <div class="col-span-2 md:col-span-1 flex flex items-center justify-center md:justify-end gap-5 text-sm px-5"
+            data-aos="fade-up">
             <a href="#" target="_blank"
                 class="min-w-8 min-h-8 rounded-full bg-stone-500/50 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
                 <img src="/assets/svg/facebook-white.svg" class="w-3.5 h-3.5 pointer-events-none">
@@ -202,12 +204,11 @@
     </section>
 
     <!--============================ Header Section ===================================-->
-    <header class="bg-white/90 backdrop-blur-sm shadow-md sticky top-0 z-50">
+    <header class="bg-white/90 backdrop-blur-sm shadow-md sticky top-0 z-50 ">
         <div class="container mx-auto px-2 lg:px-12">
-
             <!--===================== Logo and Menus ======================-->
             <div class="flex items-center justify-between py-4 md:px-5 xl:px-12">
-                <a href="/" class="flex items-center gap-3 group">
+                <a href="/" class="flex items-center gap-3 group" data-aos="fade-right">
                     <div
                         class="w-14 h-14 rounded-full /10 flex items-center justify-center group-hover:/20 transition-colors">
                         <img
@@ -219,7 +220,7 @@
                     </div>
                 </a>
 
-                <nav class="hidden lg:flex items-center gap-1">
+                <nav class="hidden lg:flex items-center gap-1" data-aos="fade-left">
 
                     <!--======== Home =======-->
                     <div class="relative group">
@@ -331,19 +332,17 @@
                             Contact
                         </a>
                     </div>
-
                 </nav>
 
                 <button class="lg:hidden p-2 transition-colors toggle-sidebar">
                     <img src="/assets/svg/breadcrumb.svg" class="w-6 h-6 pointer-events-none" alt="">
                 </button>
             </div>
-
         </div>
     </header>
 
     <!--============================ Main Section ===================================-->
-    <section class="w-full min-h-screen">
+    <section class="w-full min-h-screen" data-aos="fade-up">
 
         <!--=============== Main Section Text ===============-->
         <div class="relative py-16 overflow-hidden">
@@ -351,13 +350,13 @@
                 alt="Buddha School Background" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-blue-600/50"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-                <p class="text-sm uppercase tracking-wider mb-2">
+                <p class="text-sm uppercase tracking-wider mb-2" data-aos="fade-right">
                     Welcome to Buddha School
                 </p>
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-right">
                     Vacancy
                 </h2>
-                <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+                <p class="text-lg text-blue-100 max-w-2xl mx-auto" data-aos="fade-up">
                     Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
                 </p>
             </div>
@@ -368,7 +367,7 @@
             <div class="relative grid grid-cols-1 md:grid-cols-3 gap-6 z-4">
 
                 <!--=========== card 1 =================-->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-right">
                     <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <img src="/assets/svg/badge-dollar-light-blue.svg" class="w-7 h-7" alt="">
                     </div>
@@ -378,7 +377,7 @@
 
 
                 <!--=========== card 2 =================-->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-right">
                     <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <img src="/assets/svg/badge-dollar-light-blue.svg" class="w-7 h-7" alt="">
                     </div>
@@ -388,7 +387,7 @@
 
 
                 <!--=========== card 3 =================-->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-right">
                     <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <img src="/assets/svg/badge-dollar-light-blue.svg" class="w-7 h-7" alt="">
                     </div>
@@ -411,8 +410,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
                     <!--===== Job 1 ======-->
-                    <div
-                        class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300"
+                        data-aos="fade-up">
                         <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between">
                             <div class="flex-1">
                                 <div class="flex items-start justify-between mb-3">
@@ -466,8 +465,8 @@
                     </div>
 
                     <!--===== Job 2 ======-->
-                    <div
-                        class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300"
+                        data-aos="fade-up">
                         <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between">
                             <div class="flex-1">
                                 <div class="flex items-start justify-between mb-3">
@@ -521,8 +520,8 @@
                     </div>
 
                     <!--===== Job 3 ======-->
-                    <div
-                        class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300"
+                        data-aos="fade-up">
                         <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between">
                             <div class="flex-1">
                                 <div class="flex items-start justify-between mb-3">
@@ -576,8 +575,8 @@
                     </div>
 
                     <!--===== Job 4 ======-->
-                    <div
-                        class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300"
+                        data-aos="fade-up">
                         <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between">
                             <div class="flex-1">
                                 <div class="flex items-start justify-between mb-3">
@@ -636,13 +635,199 @@
 
         <div class="text-center py-4">
             <button
-                class="inline-flex items-center justify-center px-8 py-3 bg-blue-500 text-white text-center rounded-full font-medium hover:bg-blue-600 transition shadow-lg">
+                class="inline-flex items-center justify-center px-8 py-3 bg-blue-500 text-white text-center rounded-full font-medium hover:bg-blue-600 transition shadow-lg"
+                data-aos="fade-right">
                 Load More
                 <img src="/assets/svg/cheveron-right-white.svg" class="w-5 h-5" alt="">
             </button>
         </div>
 
     </section>
+
+    <!--============================ Footer Section ===================================-->
+    <footer class="text-black shadow-md border-t bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 py-16" data-aos="fade-up">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">About Our School</h3>
+                    <p class="leading-relaxed mb-6">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis numquam fugit minima,
+                        voluptatum repudiandae vel fuga! Placeat iure dicta soluta ullam aspernatur.
+                    </p>
+
+                    <!--====== social media links =====-->
+                    <div class="flex gap-4 justify-center md:justify-start">
+
+                        <a href="#" target="_blank"
+                            class="min-w-10 min-h-10 rounded-full bg-blue-500 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
+                            <img src="/assets/svg/facebook-white.svg" class="w-3.5 h-3.5 pointer-events-none">
+                        </a>
+
+                        <a href="#" target="_blank"
+                            class="min-w-10 min-h-10 rounded-full bg-blue-500 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
+                            <img src="/assets/svg/insta-white.svg" class="w-3.5 h-3.5 pointer-events-none">
+                        </a>
+
+                        <a href="#" target="_blank"
+                            class="min-w-10 min-h-10 rounded-full bg-blue-500 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
+                            <img src="/assets/svg/twitter-white.svg" class="w-3.5 h-3.5 pointer-events-none">
+                        </a>
+
+                        <a href="#" target="_blank"
+                            class="min-w-10 min-h-10 rounded-full bg-blue-500 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
+                            <img src="/assets/svg/linkedin-white.svg" class="w-3.5 h-3.5 pointer-events-none">
+                        </a>
+
+                    </div>
+                </div>
+
+                <!--========== Quick Links ======-->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="grid grid-cols-2 md:grid-cols-1 gap-2">
+                        <li>
+                            <a href="#"
+                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
+                                Home
+                                <img src="/assets/svg/arrow-right-blue.svg"
+                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
+                                    alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
+                                About
+                                <img src="/assets/svg/arrow-right-blue.svg"
+                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
+                                    alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
+                                Gallery
+                                <img src="/assets/svg/arrow-right-blue.svg"
+                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
+                                    alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
+                                Vacancy
+                                <img src="/assets/svg/arrow-right-blue.svg"
+                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
+                                    alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
+                                Contact
+                                <img src="/assets/svg/arrow-right-blue.svg"
+                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
+                                    alt="">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!--========= Resources ========-->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="grid grid-cols-2 md:grid-cols-1 gap-2">
+                        <li>
+                            <a href="#"
+                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
+                                Calendar
+                                <img src="/assets/svg/arrow-right-blue.svg"
+                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
+                                    alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
+                                Library
+                                <img src="/assets/svg/arrow-right-blue.svg"
+                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
+                                    alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
+                                Cafateria menu
+                                <img src="/assets/svg/arrow-right-blue.svg"
+                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
+                                    alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
+                                Transportation
+                                <img src="/assets/svg/arrow-right-blue.svg"
+                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
+                                    alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
+                                School Yellow
+                                <img src="/assets/svg/arrow-right-blue.svg"
+                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
+                                    alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--====== Contact Info ========-->
+                <div class="md:col-span-2 lg:col-span-1">
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <img src="/assets/svg/map-pin-blue.svg" class="w-5 h-5" alt="">
+                            <span>Lumbini, Nepal</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <img src="/assets/svg/phone-blue.svg" class="w-5 h-5" alt="">
+                            <span>+977 9867543657</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <img src="/assets/svg/mail-blue.svg" class="w-5 h-5" alt="">
+                            <span>info@ourschool.edu</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <img src="/assets/svg/clock-blue.svg" class="w-5 h-5" alt="">
+                            <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm">
+                        © 2025 Our School. All rights reserved.
+                    </p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class="hover:text-blue-500 transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-blue-500 transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-blue-500 transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!--============================ Modal ===================================-->
     <div id="vacancy-apply-modal"
@@ -950,190 +1135,8 @@
         </div>
     </div>
 
-    <!--============================ Footer Section ===================================-->
-    <footer class="text-black shadow-md border-t bg-stone-100">
-        <div class="max-w-7xl mx-auto px-4 py-16">
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 mb-12">
-                <div>
-                    <h3 class="text-lg font-bold mb-4">About Our School</h3>
-                    <p class="leading-relaxed mb-6">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis numquam fugit minima,
-                        voluptatum repudiandae vel fuga! Placeat iure dicta soluta ullam aspernatur.
-                    </p>
-
-                    <!--====== social media links =====-->
-                    <div class="flex gap-4 justify-center md:justify-start">
-
-                        <a href="#" target="_blank"
-                            class="min-w-10 min-h-10 rounded-full bg-blue-500 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
-                            <img src="/assets/svg/facebook-white.svg" class="w-3.5 h-3.5 pointer-events-none">
-                        </a>
-
-                        <a href="#" target="_blank"
-                            class="min-w-10 min-h-10 rounded-full bg-blue-500 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
-                            <img src="/assets/svg/insta-white.svg" class="w-3.5 h-3.5 pointer-events-none">
-                        </a>
-
-                        <a href="#" target="_blank"
-                            class="min-w-10 min-h-10 rounded-full bg-blue-500 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
-                            <img src="/assets/svg/twitter-white.svg" class="w-3.5 h-3.5 pointer-events-none">
-                        </a>
-
-                        <a href="#" target="_blank"
-                            class="min-w-10 min-h-10 rounded-full bg-blue-500 flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:-translate-y-[2px] hover:shadow-md">
-                            <img src="/assets/svg/linkedin-white.svg" class="w-3.5 h-3.5 pointer-events-none">
-                        </a>
-
-                    </div>
-                </div>
-
-                <!--========== Quick Links ======-->
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                    <ul class="grid grid-cols-2 md:grid-cols-1 gap-2">
-                        <li>
-                            <a href="#"
-                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
-                                Home
-                                <img src="/assets/svg/arrow-right-blue.svg"
-                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
-                                    alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
-                                About
-                                <img src="/assets/svg/arrow-right-blue.svg"
-                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
-                                    alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
-                                Gallery
-                                <img src="/assets/svg/arrow-right-blue.svg"
-                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
-                                    alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
-                                Vacancy
-                                <img src="/assets/svg/arrow-right-blue.svg"
-                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
-                                    alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
-                                Contact
-                                <img src="/assets/svg/arrow-right-blue.svg"
-                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
-                                    alt="">
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <!--========= Resources ========-->
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
-                    <ul class="grid grid-cols-2 md:grid-cols-1 gap-2">
-                        <li>
-                            <a href="#"
-                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
-                                Calendar
-                                <img src="/assets/svg/arrow-right-blue.svg"
-                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
-                                    alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#"
-                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
-                                Library
-                                <img src="/assets/svg/arrow-right-blue.svg"
-                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
-                                    alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#"
-                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
-                                Cafateria menu
-                                <img src="/assets/svg/arrow-right-blue.svg"
-                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
-                                    alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#"
-                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
-                                Transportation
-                                <img src="/assets/svg/arrow-right-blue.svg"
-                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
-                                    alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#"
-                                class="inline-flex group items-center justify-center gap-1 hover:text-blue-500 transition-colors">
-                                School Yellow
-                                <img src="/assets/svg/arrow-right-blue.svg"
-                                    class="w-4 h-4 pointer-events-none invisible group-hover:visible group-hover:translate-x-1 transition-all duration-200"
-                                    alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--====== Contact Info ========-->
-                <div class="md:col-span-2 lg:col-span-1">
-                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
-                    <ul class="space-y-4">
-                        <li class="flex gap-3">
-                            <img src="/assets/svg/map-pin-blue.svg" class="w-5 h-5" alt="">
-                            <span>Lumbini, Nepal</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <img src="/assets/svg/phone-blue.svg" class="w-5 h-5" alt="">
-                            <span>+977 9867543657</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <img src="/assets/svg/mail-blue.svg" class="w-5 h-5" alt="">
-                            <span>info@ourschool.edu</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <img src="/assets/svg/clock-blue.svg" class="w-5 h-5" alt="">
-                            <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-gray-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p class="text-sm">
-                        © 2025 Our School. All rights reserved.
-                    </p>
-                    <div class="flex gap-6 text-sm">
-                        <a href="#" class="hover:text-blue-500 transition-colors">Privacy Policy</a>
-                        <a href="#" class="hover:text-blue-500 transition-colors">Terms of Service</a>
-                        <a href="#" class="hover:text-blue-500 transition-colors">Cookie Policy</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!--===== AOS Js =======-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="/js/script.js"></script>
