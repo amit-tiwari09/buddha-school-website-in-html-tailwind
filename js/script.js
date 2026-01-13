@@ -1,14 +1,10 @@
+import "../js/core/slider.js";
+import "../js/core/events.js";
 
-import "../js/core/slider.js"
-import "../js/core/events.js"
-
-
-
-  AOS.init({
-    duration: 800,
-    easing: 'ease-out-cubic',
-    once: true,
-    offset: 120,
-  });
-
-
+// Initialize AOS (Animate On Scroll) library with custom settings
+AOS.init({
+  duration: 800,
+  easing: "ease-out-cubic",
+  once: true,
+  offset: 120,
+});
